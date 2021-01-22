@@ -1,0 +1,11 @@
+<div>
+    Clock
+    <p>Today is {{today | date}}</p>
+   <p>Or if you prefer, {{today | date:'fullDate'}}</p>
+   <p>The time is {{today | date:'h:mm a z'}}</p>
+</div>
+<div class="buttons_panel">
+    <button (click)='start()'>Start/Stop</button>
+    <button>Wait</button>
+    <button>Reset</button>
+</div>

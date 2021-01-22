@@ -1,0 +1,14 @@
+.buttons_panel {
+    width: 50%;
+    margin: auto;
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.buttons_panel > button {
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+}
