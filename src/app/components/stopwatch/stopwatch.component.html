@@ -1,11 +1,10 @@
-<div>
-    Clock
-    <p>Today is {{today | date}}</p>
-   <p>Or if you prefer, {{today | date:'fullDate'}}</p>
-   <p>The time is {{today | date:'h:mm a z'}}</p>
-</div>
+<div class="output"> 
+    <span *ngIf='counterHour < 10'>0</span>{{counterHour}}:
+    <span *ngIf='counterMin < 10'>0</span>{{counterMin}}:
+    <span *ngIf='counterSec < 10'>0</span>{{counterSec}}  
+ </div>
 <div class="buttons_panel">
     <button (click)='start()'>Start/Stop</button>
-    <button>Wait</button>
-    <button>Reset</button>
+    <button (click)="wait()">Wait</button>
+    <button (click)='reset()'>Reset</button>
 </div>
